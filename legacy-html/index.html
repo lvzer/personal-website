@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Varun Soni — Machine Learning Engineer. Computer vision, industrial ML, and acoustic emission analysis."
+    />
+    <title>Varun Soni</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Varun Soni</h1>
+        <p class="tagline">zookeeper of neurons</p>
+      </header>
+
+      <hr class="rule" />
+
+      <section class="section">
+        <h2>bio</h2>
+        <p>
+          machine learning researcher working on computer vision and industrial
+          quality control. most recently built a novel system that predicts
+          ultrasound weld quality from acoustic emission signals using three
+          state-of-the-art architectures. finished with an
+          M.Sc. in Data Science and AI at Saarland University.
+        </p>
+      </section>
+
+      <div class="timeline">
+        <article class="entry">
+          <div class="years">2024 - 2026</div>
+          <div>
+            <p>
+              ML Engineer / Research Assistant at
+              <a
+                href="https://www.izfp.fraunhofer.de/"
+                target="_blank"
+                rel="noreferrer"
+              >Fraunhofer IZFP</a>, Saarbrücken. Built a novel approach to
+              predict ultrasound weld quality from acoustic emissions using
+              machine learning.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="years">2021 - 2026</div>
+          <div>
+            <p>
+              M.Sc. Data Science and Artificial Intelligence at
+              <a
+                href="https://www.uni-saarland.de/"
+                target="_blank"
+                rel="noreferrer"
+              >Universität des Saarlandes</a>, Saarbrücken.
+            </p>
+            <p>
+              Thesis:
+              <em>Acoustic Emission Analysis in Ultrasound Welding using Machine Learning</em>
+              (Fraunhofer IZFP), supervised by Prof. Dr.-Ing. Hans-Georg
+              Herrmann, Prof. Dr. Dietrich Klakow, and Dr.-Ing. Bernd Wolter.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="years">2019</div>
+          <div>
+            <p>
+              Development intern at Reliance Corporate IT Park, Mumbai.
+              Contributed to an internal e-portal using MEAN stack.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="years">2018 - 2019</div>
+          <div>
+            <p>
+              Eduvance Industrial IoT programme; built a sensor data pipeline in
+              Python that read GPIO inputs and published readings to an MQTT
+              broker.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="years">2017  2021</div>
+          <div>
+            <p>
+              B.E. Computer Engineering at Don Bosco Institute of Technology,
+              Mumbai (GPA 9.15 / 10). Final-year project: generative speech
+              system (English → Hindi) via encoder-decoder NMT and TTS.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <section class="section">
+        <h2>thesis</h2>
+        <div class="pub">
+          <span class="pub-title">Acoustic Emission Analysis in Ultrasound Welding</span>
+          <span class="pub-meta">M.Sc. thesis · Universität des Saarlandes / Fraunhofer IZFP · 2026</span>
+          <p class="pub-body">
+            Ultrasound welding joins dissimilar metals (e.g. Al/Cu tabs) under
+            high-frequency vibration and pressure. Quality checks usually rely
+            on destructive tensile/shear tests. On the other hand, acoustic emission signals are non-destructive, cheap, and suitable for production. This work instead uses acoustic emission signals recorded during welding: raw amplitude-time traces
+            (~500 MB each) are turned into compact RGB spectrograms via
+            short-time Fourier transforms, then classified as weld success or
+            failure.
+          </p>
+          <p>
+            Three ImageNet-pretrained architectures were compared — ResNet-18,
+            EfficientNet-B0, and ViT. EfficientNet matched ViT statistically
+            (McNemar, α = 0.05) while staying more stable in training (0.5%
+            variance) and far cheaper (5M vs 22M parameters), making it the
+            recommendation for industrial deployment. Failed welds tend to show
+            shorter duration, spectral broadening, and irregular intensity —
+            patterns the models pick up from the spectrograms.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>projects</h2>
+        <ul>
+          <li>
+            <span class="project-title">T.U.E.S.D.A.Y. — Automatic Voice Dubbing</span>
+            <br />
+            End-to-end generative speech pipeline: ASR → neural machine
+            translation → TTS. Attention-based encoder-decoder on a parallel
+            English–Hindi corpus (TensorFlow / Seq2Seq).
+          </li>
+          <li>
+            <span class="project-title">Semantic Similarity via Bi-Encoders</span>
+            <br />
+            Fine-tuned BERT sentence embeddings for semantic similarity on the
+            SICK benchmark; outperformed a BiLSTM baseline (PyTorch / Hugging
+            Face).
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>elsewhere</h2>
+        <div class="links">
+          <a href="mailto:varunsoni1402@gmail.com">email</a>
+          <a href="https://github.com/lvzer" target="_blank" rel="noreferrer">github</a>
+          <a href="https://linkedin.com/in/varunsoniii" target="_blank" rel="noreferrer">linkedin</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

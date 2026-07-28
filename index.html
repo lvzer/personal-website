@@ -8,6 +8,14 @@
       content="Varun Soni — Machine Learning Engineer. Computer vision, industrial ML, and acoustic emission analysis."
     />
     <title>Varun Soni</title>
+    <script>
+      try {
+        var t = localStorage.getItem('theme')
+        if (t === 'dark' || t === 'light') {
+          document.documentElement.setAttribute('data-theme', t)
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

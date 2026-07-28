@@ -1,6 +1,8 @@
-# Varun Soni — Personal Website
+# Varun Soni
 
-Minimal single-page site in the spirit of [karpathy.ai](https://karpathy.ai): Helvetica, timeline bio, thesis & projects. Built with Vite + React.
+Minimal single-page personal website, built with Vite + React.
+
+A plain HTML + CSS copy lives in [`legacy-html/`](./legacy-html/) if you want the same look with zero JavaScript.
 
 ## Run
 

@@ -4,53 +4,28 @@
   box-sizing: border-box;
 }
 
-:root {
-  color-scheme: light;
-  --bg: #fff;
-  --text: #111;
-  --muted: #333;
-  --meta: #444;
-  --rule: #ddd;
-  --link: #0645ad;
-  --line: #111;
-}
-
-[data-theme='dark'] {
-  color-scheme: dark;
-  --bg: #111;
-  --text: #eee;
-  --muted: #bbb;
-  --meta: #999;
-  --rule: #333;
-  --link: #8ab4f8;
-  --line: #eee;
-}
-
 html {
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.55;
-  color: var(--text);
-  background: var(--bg);
+  color: #111;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: var(--link);
+  color: #0645ad;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-#root {
-  min-height: 100vh;
 }
 
 .page {
@@ -60,7 +35,7 @@ a:hover {
 }
 
 .header {
-  margin-bottom: 12px;
+  margin-bottom: 28px;
 }
 
 .header h1 {
@@ -74,17 +49,13 @@ a:hover {
   margin: 0;
   font-size: 1.15rem;
   font-weight: 400;
-  color: var(--muted);
+  color: #333;
 }
 
 .rule {
   border: 0;
-  border-top: 1px solid var(--rule);
-  margin: 14px 0;
-}
-
-.rule + .section {
-  margin-top: 24px;
+  border-top: 1px solid #ddd;
+  margin: 24px 0;
 }
 
 .timeline {
@@ -105,11 +76,10 @@ a:hover {
   content: '';
   position: absolute;
   left: 55px;
-  /* small gap below this year and above the next */
-  top: 1.7em;
-  bottom: calc(-28px + 0.5em);
+  top: 1.35em;
+  bottom: -28px;
   width: 1px;
-  background: var(--line);
+  background: #111;
   opacity: 0.15;
   transform: translateX(-50%);
 }
@@ -175,7 +145,7 @@ a:hover {
 }
 
 .pub-meta {
-  color: var(--meta);
+  color: #444;
   font-size: 0.95rem;
 }
 
@@ -187,31 +157,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 16px;
-}
-
-.extras-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
   margin-top: 8px;
-}
-
-.theme-toggle {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: none;
-  font: inherit;
-  font-size: 0.95rem;
-  color: var(--text);
-  cursor: pointer;
-  text-transform: lowercase;
-  flex-shrink: 0;
-}
-
-.theme-toggle:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 560px) {
