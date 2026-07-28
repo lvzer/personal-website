@@ -48,7 +48,7 @@ function App() {
           <div className="years">2024 - 2026</div>
           <div>
             <p>
-              ML Engineer / Research Assistant at{' '}
+              ML Researcher / Research Assistant at{' '}
               <a
                 href="https://www.izfp.fraunhofer.de/"
                 target="_blank"
@@ -131,21 +131,14 @@ function App() {
           </span>
           <p className="pub-body">
             Ultrasound welding joins dissimilar metals (e.g. Al/Cu tabs) under
-            high-frequency vibration and pressure. Quality checks usually rely
-            on destructive tensile/shear tests. This work instead uses acoustic
-            emission signals recorded during welding: raw amplitude-time traces
-            (~500 MB each) are turned into compact RGB spectrograms via
-            short-time Fourier transforms, then classified as weld success or
-            failure.
+            high-frequency vibration and pressure. Quality control usually relies on destructive tensile/shear tests. This work instead uses acoustic emission signals recorded during welding: raw amplitude-time traces (~500 MB each) are turned into compact RGB spectrograms via short-time Fourier transforms, then manually labelled as successes or failures.
           </p>
           <p>
-            Three ImageNet-pretrained architectures were compared — ResNet-18,
-            EfficientNet-B0, and ViT. EfficientNet matched ViT statistically
-            (McNemar, α = 0.05) while staying more stable in training (0.5%
+            3 ImageNet-pretrained architectures were compared: ResNet-18,
+            EfficientNet_b0, and ViT. EfficientNet matched ViT statistically
+            (acc. to McNemar's test, α = 0.05) while staying more stable in training (0.5%
             variance) and far cheaper (5M vs 22M parameters), making it the
-            recommendation for industrial deployment. Failed welds tend to show
-            shorter duration, spectral broadening, and irregular intensity —
-            patterns the models pick up from the spectrograms.
+            recommendation for industrial deployment. Common patterns that the models tend to pick up on are shorter duration, spectral broadening, and irregular intensity.
           </p>
         </div>
       </section>
@@ -158,9 +151,8 @@ function App() {
               T.U.E.S.D.A.Y. — Automatic Voice Dubbing
             </span>
             <br />
-            End-to-end generative speech pipeline: ASR → neural machine
-            translation → TTS. Attention-based encoder-decoder on a parallel
-            English–Hindi corpus (TensorFlow / Seq2Seq).
+            End-to-end generative speech pipeline: ASR → NMT → TTS. Attention-based encoder-decoder on a parallel
+            English-Hindi corpus (TensorFlow / Seq2Seq). Responsible for the ASR component of the pipeline.
           </li>
           <li>
             <span className="project-title">
